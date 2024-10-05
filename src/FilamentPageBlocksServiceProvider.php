@@ -28,7 +28,7 @@ class FilamentPageBlocksServiceProvider extends PackageServiceProvider
         parent::packageRegistered();
 
         $this->app->scoped('filament-page-blocks', function () {
-            return new FilamentPageBlocksManager();
+            return new FilamentPageBlocksManager;
         });
     }
 
